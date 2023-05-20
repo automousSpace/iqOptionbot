@@ -1,0 +1,33 @@
+**Project: IQ Tools Self-Trading Machine Independent Bot**
+
+**Studying Data Source and Extracting Information**
+During my recent project, I developed an IQ Tools self-trading machine independent bot. As part of the project, 
+I delved into the website's data source to understand the origin of the graphs' data. Through analysis, 
+I discovered that the data was not fetched through a repeated link but rather via a web socket. 
+Extracting and comprehending data from an external system presented challenges. However, after a day of studying, 
+I successfully analyzed all the required information. I identified the relevant reply messages for the USD/GBP currency pair, 
+determined their IDs, and grasped the functionality of each parameter in the replies, such as min, max, start, from, and end. 
+Armed with this knowledge, I developed my own client-side bot using Node.js and initiated message exchanges with the server.
+
+**Overcoming Initial Hurdles and Achieving Functionality**
+At the outset, I encountered an issue where the IQ Option server failed to send me the desired pair messages. 
+After meticulously studying hundreds of messages, I eventually uncovered the specific message that needed to be sent to the server to elicit the desired response. 
+Once implemented, my website clients started receiving the expected messages.
+
+**Algorithm Development and Testing**
+In addition to data retrieval, I created an algorithm to analyze candle breaks and their preceding values on the graph. 
+Another algorithm I developed involved monitoring predefined patterns and promptly detecting their occurrence. Upon identification, 
+the bot had the potential to trigger automatic buy or sell actions. However, I did not enable this feature in the bot. To assess the system's performance, 
+I utilized cookies from a real user's test account for my server-based IQ Option bot. Consequently, 
+the same account was active in both my bot and the actual platform.
+
+**Live Status Monitoring and Analysis**
+To keep track of the bot's live status, I set up a continuous running script and designed an online webpage where the bot acted as the server. 
+Clients could observe real-time analysis on this webpage.
+
+**Teacher's Project and Discontinuation**
+Initially, this project was intended for one of my teachers who, unfortunately, did not possess reliable patterns and was experimenting with unreliable ones. 
+This lack of consistency made it impractical for him to monitor the bot continuously for 24 hours. Seeking my assistance, he approached me, 
+and I completed the project within a span of 3-4 days. 
+However, I soon realized that his absence of a suitable pattern was consuming my time without yielding substantial results. Consequently, 
+I made the decision to discontinue my involvement in the project.
